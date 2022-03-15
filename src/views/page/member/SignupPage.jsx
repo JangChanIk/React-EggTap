@@ -123,7 +123,7 @@ const SignupPage = ({authLogic}) => {
 
       const response = await axios({
         method: 'get',
-        url: process.env.REACT_APP_SPRING_IP+'/member/memberList',
+        url: process.env.REACT_APP_SPRING_IP+'member/memberList',
         params: {
           mem_nickname: memInfo.nickname
         }
@@ -145,7 +145,7 @@ const SignupPage = ({authLogic}) => {
 
       let response = await axios({
         method: 'get',
-        url: process.env.REACT_APP_SPRING_IP+'/member/memberList',
+        url: process.env.REACT_APP_SPRING_IP+'member/memberList',
         params: {
           mem_email: memInfo.email
         }
