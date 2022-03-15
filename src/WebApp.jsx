@@ -8,7 +8,7 @@ import Header from './views/components/Header';
 import styled from 'styled-components';
 import GamePage from './views/page/GamePage';
 import ModalEmailVerified from './views/components/member/ModalEmailVerified';
-
+import { useLocation } from 'react-router-dom';
 import { memberListDB } from './service/dbLogic';
 import { useDispatch, useSelector } from 'react-redux';
 import { setAll, setEmailVerified } from './redux/userInfo/action';
